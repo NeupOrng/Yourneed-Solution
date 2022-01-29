@@ -2,7 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+     @apply font-mono;
+}
 html{
-          scroll-behavior: smooth;
+     scroll-behavior: smooth;
+}
+
+
+
+/* home */
+.home{
+     background-color: #f3f7fd;
+     overflow-y: hidden;
+     margin-top: 2vh;
+     padding-top: 10vh;
+}
+.content{
+     color: #666666;
+}
+.image{
+     max-height: 80vh;
+     max-width: 100%;
+     margin: auto;
+}
+
+/* footer */
+.Footer{
+     @apply flex items-center py-5 mx-10 my-5 ;
+     border-top: 1px solid rgba(8,11,45,0.2);
+}
+.Footer-1{
+     @apply flex items-center ;
+}
+.Footer-logo{
+     @apply w-10 mr-3;
+}
+.Footer-text p{
+     font-size: 14px;
+}
+
+
+/* media query */
+@media only screen and (max-width: 1050px){
+     .image{
+          display: none;
+     }
+}
+@media only screen and (max-width: 770px) 
+{
+     .bot-con{
+          display: none;
+     }
+     .image{
+          display: block;
+     }
 }

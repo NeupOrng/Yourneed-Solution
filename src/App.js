@@ -6,6 +6,7 @@ import Home from './pages/home'
 import Services from './pages/services';
 import Solution from './pages/Solution';
 import Dropdown from './components/dropdown';
+import Footer from './components/footer';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +36,8 @@ function App() {
       <Home />
       <Services />
       <Solution />
+      
+      <Footer />
     </div>
   );
 }
